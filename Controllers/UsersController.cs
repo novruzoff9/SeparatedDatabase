@@ -14,9 +14,9 @@ namespace SeperatedDatabase.Controllers;
 public class UsersController : Controller
 {
     private readonly SeperatedDatabaseContext _context;
-    private ICreateSeperatedDb _createSeperatedDb;
+    private ISeperatedDbService _createSeperatedDb;
 
-    public UsersController(SeperatedDatabaseContext context, ICreateSeperatedDb createSeperatedDb)
+    public UsersController(SeperatedDatabaseContext context, ISeperatedDbService createSeperatedDb)
     {
         _context = context;
         _createSeperatedDb = createSeperatedDb;
@@ -44,6 +44,22 @@ public class UsersController : Controller
         }
 
         return View(user);
+    }
+
+    public async Task<IActionResult> UserDbDetails(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var database = _createSeperatedDb.GetUsersDb((int)id);
+        if (database == null)
+        {
+            return NotFound();
+        }
+
+        return View(database.Products.Include(x => x.Category).ToList());
     }
 
     // GET: Users/Create

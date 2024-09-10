@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<SeperatedDatabaseContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SeperatedDatabaseContext") ?? throw new InvalidOperationException("Connection string 'SeperatedDatabaseContext' not found.")));
 
-builder.Services.AddScoped<ICreateSeperatedDb, CreateSeperatedDb>();
+builder.Services.AddScoped<ISeperatedDbService, SeperatedDbService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

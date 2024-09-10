@@ -87,3 +87,38 @@ public async Task<IActionResult> Create([Bind("Id,UserName,ConnectionString")] U
 }
 
 ```
+
+Daha sonra isə istifadəçinin məlumatlarını əldə etmək üçün əsas verilənlər bazasından onun ```connectionString```i götürülürərək özünə aid olan verilənlər bazasına giriş edilir və məlumatları əldə olunur.
+
+```csharp
+public UsersDbContext GetUsersDb(int id)
+{
+    string connectionString = _context.Users.FirstOrDefault(x => x.Id == id).ConnectionString;
+    var optionsBuilder = new DbContextOptionsBuilder<UsersDbContext>();
+    optionsBuilder.UseSqlServer(connectionString);
+
+    var context = new UsersDbContext(optionsBuilder.Options);
+
+    return context;
+}
+```
+
+Gətirilən məlumatlar birbaşa controller-da istifadə olunur.
+
+```csharp
+public async Task<IActionResult> UserDbDetails(int? id)
+{
+    if (id == null)
+    {
+        return NotFound();
+    }
+
+    var database = _createSeperatedDb.GetUsersDb((int)id);
+    if (database == null)
+    {
+        return NotFound();
+    }
+
+    return View(database.Products.Include(x => x.Category).ToList());
+}
+```

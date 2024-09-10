@@ -7,12 +7,24 @@
       "RelativeMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|c:\\users\\novruzoff\\source\\repos\\seperateddatabase\\helpers\\createseperateddb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|solutionrelative:helpers\\createseperateddb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|c:\\users\\novruzoff\\source\\repos\\seperateddatabase\\helpers\\seperateddbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|solutionrelative:helpers\\seperateddbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|c:\\users\\novruzoff\\source\\repos\\seperateddatabase\\helpers\\iseperateddbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|solutionrelative:helpers\\iseperateddbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|c:\\users\\novruzoff\\source\\repos\\seperateddatabase\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|c:\\users\\novruzoff\\source\\repos\\seperateddatabase\\data\\seperateddatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|solutionrelative:data\\seperateddatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|c:\\users\\novruzoff\\source\\repos\\seperateddatabase\\data\\usersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B5C9EFF-A831-4B8D-84EB-11DA26750592}|SeperatedDatabase.csproj|solutionrelative:data\\usersdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +34,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T19:39:07.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsersDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Data\\UsersDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\UsersDbContext.cs",
+              "ToolTip": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Data\\UsersDbContext.cs",
+              "RelativeToolTip": "Data\\UsersDbContext.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAIwCQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T19:38:52.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SeperatedDatabaseContext.cs",
+              "DocumentMoniker": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Data\\SeperatedDatabaseContext.cs",
+              "RelativeDocumentMoniker": "Data\\SeperatedDatabaseContext.cs",
+              "ToolTip": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Data\\SeperatedDatabaseContext.cs",
+              "RelativeToolTip": "Data\\SeperatedDatabaseContext.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T19:38:45.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ISeperatedDbService.cs",
+              "DocumentMoniker": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Helpers\\ISeperatedDbService.cs",
+              "RelativeDocumentMoniker": "Helpers\\ISeperatedDbService.cs",
+              "ToolTip": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Helpers\\ISeperatedDbService.cs",
+              "RelativeToolTip": "Helpers\\ISeperatedDbService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T19:38:03.875Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,35 +100,22 @@
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAIwEEAAAAzAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAMwDAAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T18:04:00.665Z",
+              "WhenOpened": "2024-09-10T19:27:41.17Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CreateSeperatedDb.cs",
-              "DocumentMoniker": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Helpers\\CreateSeperatedDb.cs",
-              "RelativeDocumentMoniker": "Helpers\\CreateSeperatedDb.cs",
-              "ToolTip": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Helpers\\CreateSeperatedDb.cs",
-              "RelativeToolTip": "Helpers\\CreateSeperatedDb.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAUwD8AAAAAAAAA",
+              "Title": "SeperatedDbService.cs",
+              "DocumentMoniker": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Helpers\\SeperatedDbService.cs",
+              "RelativeDocumentMoniker": "Helpers\\SeperatedDbService.cs",
+              "ToolTip": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Helpers\\SeperatedDbService.cs",
+              "RelativeToolTip": "Helpers\\SeperatedDbService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAUwC4AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T18:03:47.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SeperatedDatabaseContext.cs",
-              "DocumentMoniker": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Data\\SeperatedDatabaseContext.cs",
-              "RelativeDocumentMoniker": "Data\\SeperatedDatabaseContext.cs",
-              "ToolTip": "C:\\Users\\Novruzoff\\source\\repos\\SeperatedDatabase\\Data\\SeperatedDatabaseContext.cs",
-              "RelativeToolTip": "Data\\SeperatedDatabaseContext.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-10T18:03:43.412Z",
+              "WhenOpened": "2024-09-10T19:26:27.742Z",
               "EditorCaption": ""
             }
           ]

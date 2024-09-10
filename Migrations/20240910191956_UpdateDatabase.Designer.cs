@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SeperatedDatabase.Data;
 
@@ -10,9 +11,11 @@ using SeperatedDatabase.Data;
 namespace SeperatedDatabase.Migrations
 {
     [DbContext(typeof(SeperatedDatabaseContext))]
-    partial class SeperatedDatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20240910191956_UpdateDatabase")]
+    partial class UpdateDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -23,4 +23,5 @@ public class SeperatedDatabaseContext : DbContext
         modelBuilder.Entity<User>()
             .HasKey(x => x.Id);
     }
+
 }

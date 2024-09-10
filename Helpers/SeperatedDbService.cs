@@ -5,12 +5,12 @@ using System.Reflection.Emit;
 
 namespace SeperatedDatabase.Helpers;
 
-public class CreateSeperatedDb : ICreateSeperatedDb
+public class SeperatedDbService : ISeperatedDbService
 {
     private SeperatedDatabaseContext _context;
     private IConfiguration _configuration;
 
-    public CreateSeperatedDb(SeperatedDatabaseContext context, IConfiguration configuration)
+    public SeperatedDbService(SeperatedDatabaseContext context, IConfiguration configuration)
     {
         _context = context;
         _configuration = configuration;
@@ -37,12 +37,22 @@ public class CreateSeperatedDb : ICreateSeperatedDb
         {
             if (context.Database.EnsureCreated())
             {
-                // Eğer veritabanı oluşturulmuşsa, seed verilerini ekleyin
                 AddSeedData(context);
             }
         }
 
         return connectionString;
+    }
+
+    public UsersDbContext GetUsersDb(int id)
+    {
+        string connectionString = _context.Users.FirstOrDefault(x => x.Id == id).ConnectionString;
+        var optionsBuilder = new DbContextOptionsBuilder<UsersDbContext>();
+        optionsBuilder.UseSqlServer(connectionString);
+
+        var context = new UsersDbContext(optionsBuilder.Options);
+
+        return context;
     }
 
     private void AddSeedData(UsersDbContext context)
@@ -52,10 +62,12 @@ public class CreateSeperatedDb : ICreateSeperatedDb
                 new Category { Name = "Ickiler" }
             );
 
+        context.SaveChanges();
+
         context.Products
             .AddRange(
-                new Product { Name = "Coca Cola", Description = "0.5l plastik qabda Coca cola" },
-                new Product { Name = "Fanta", Description = "0.5l plastik qabda Fanta" }
+                new Product { Name = "Coca Cola", Description = "0.5l plastik qabda Coca cola", CategoryId = 1 },
+                new Product { Name = "Fanta", Description = "0.5l plastik qabda Fanta", CategoryId = 1 }
             );
 
         context.SaveChanges();

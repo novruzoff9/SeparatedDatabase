@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SeperatedDatabase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+40ede75174a757067c1bff92f235a513fefc227b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SeperatedDatabase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SeperatedDatabase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

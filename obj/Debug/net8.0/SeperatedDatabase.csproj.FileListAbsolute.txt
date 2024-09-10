@@ -251,3 +251,4 @@ C:\Users\Novruzoff\source\repos\SeperatedDatabase\bin\Debug\net8.0\runtimes\win\
 C:\Users\Novruzoff\source\repos\SeperatedDatabase\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\Novruzoff\source\repos\SeperatedDatabase\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Novruzoff\source\repos\SeperatedDatabase\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\Novruzoff\source\repos\SeperatedDatabase\obj\Debug\net8.0\SeperatedDatabase.sourcelink.json
